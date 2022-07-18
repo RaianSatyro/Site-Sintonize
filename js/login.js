@@ -8,7 +8,7 @@ function login(){
 
     
     if (user === 'artista.sintonize@login.com' && senha === '123qwe..'){
-        return window.location.href = '../login-google.html'
+        return window.location.href = 'https://www.google.com.br/'
     }else{
        campoEsqueceuSenha.innerHTML = "Login ou senha incorretas!" 
     }
