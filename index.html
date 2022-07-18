@@ -19,15 +19,19 @@
 				<div class="card-login">
 					<h1>LOGIN</h1>
 					<div class="textfield">
-						<label for="usuario">Usuário</label>
-						<input type="text" name="usuario" placeholder="Digite o usuário ou email cadastrado.">
+						<label for="usuario" >Usuário</label>
+						<input id="user" type="text" name="usuario" placeholder="Digite o usuário ou email cadastrado.">
 					</div>	
 					<div class="textfield">
 						<label for="senha">Senha</label>
-						<input type="password" name="senha" placeholder="Digite sua senha.">
+						<input id="pass" type="password" name="senha" placeholder="Digite sua senha.">
 					</div>
-					<button class="btn-login">Entrar</button>
+					<div id="senhaErrada">
+						
+					</div>
+					<button class="btn-login" onclick="login()">Entrar</button>
 					<a href="#" id="forgot-pass"><h4>Esqueceu a senha?</h4></a>
+					
 				</div>
 			</div>
 			<div class="left-login">
@@ -50,5 +54,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/login.js"></script>
 </body>
 </html>

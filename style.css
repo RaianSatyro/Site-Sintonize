@@ -49,9 +49,14 @@ body{
 	align-items: center;
 	flex-direction: column; 
 	padding: 30px 35px;
-	background: #2f2841;
 	border-radius: 20px;
 	box-shadow:	0px 10px 40px #00000056;
+	background: rgba( 47, 40, 65, 0.1 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 11px );
+	-webkit-backdrop-filter: blur( 11px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card-login > h1{
@@ -99,7 +104,7 @@ body{
 }
 
 .btn-login{
-	width: 100%;
+	width: 60%;
 	padding: 16px 0px;
 	margin: 25px;
 	border: none;
@@ -114,22 +119,34 @@ body{
 	box-shadow: 0px 10px 40px -12px rgba(222, 70, 1, 0.322);
 }
 
+.btn-login:hover{
+	color: rgb(227, 77, 1);
+	background:  #2b134b;
+	transition: .2s;
+}
+
 .social-login{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	width: 50%;
+	justify-content: space-around;
+	width: 56%;
 }
 
 .social-login a img{
-	height: 65px;
+	height: 50px;
 	margin-top: 30px;
+
 }
 
-.social-login a:hover {
-    color: #fff; 
+.social-login a img:hover {
+    transform: scale(1.5);
+	transition: .25s;
 }
 
 .imagem-mac{
 	color: #fff;
+}
+
+#senhaErrada{
+	color: #ff0000
 }
